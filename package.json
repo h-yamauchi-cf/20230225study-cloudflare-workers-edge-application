@@ -8,7 +8,8 @@
     "dev": "npm-run-all build --parallel \"dev:*\"",
     "start": "cross-env NODE_ENV=production npm run wrangler",
     "typecheck": "tsc",
-    "wrangler": "wrangler pages dev ./public --local --port 3000"
+    "wrangler": "wrangler pages dev ./public --local --port 3000",
+    "publish": "wrangler pages publish ./public"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^1.13.0",
